@@ -10,7 +10,9 @@
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
     "lint": "eslint --fix --ext .js .",
-    "test": "mocha spec && yarn lint"
+    "test": "mocha spec && yarn lint",
+    "migrate": "knex migrate:latest --knexfile services/db/knexfiles.js",
+    "rollback": "knex migrate:rollback --knexfile services/db/knexfiles.js "
   },
   "husky": {
     "hooks": {
@@ -31,6 +33,9 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.16.0",
-    "pretty-quick": "^1.10.0"
+    "pretty-quick": "^1.10.0",
+    "knex": "^0.15.2",
+    "moment": "^2.22.2",
+    "pg": "^7.5.0"
   }
 }
