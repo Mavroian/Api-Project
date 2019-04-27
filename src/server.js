@@ -1,11 +1,11 @@
 const express = require("express");
 
-const server = ()=>{
+const server = () => {
   const app = express();
-  app.get("/",(req,res)=>{
-    res.send("hellllo")
-  })
+  app.get("/", (req, res) => {
+    res.send("hellllo");
+  });
 
   return app;
-}
-module.exports = {server}
+};
+module.exports = { server };
