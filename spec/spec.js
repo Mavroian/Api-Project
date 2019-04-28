@@ -13,6 +13,7 @@ describe("API Server", () => {
   describe("Restfull", () => {
     it("Should print hello ", async () => {
       const res = await request.get("/");
+      console.log(res.text);
       res.text.should.deep.equal("hellllo");
     });
   });

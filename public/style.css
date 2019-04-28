@@ -1,0 +1,12 @@
+body {
+  margin-top: 3em;
+  padding: 50px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+#footer {
+  margin-bottom: 0;
+}

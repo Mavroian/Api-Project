@@ -1,0 +1,147 @@
+<h1>Modify a movie</h1>
+<form class="form" action="/api/modify/edit?_method=PATCH" method="POST">
+<div class="form-group">
+    <label for="id">ID</label>
+    <input type="number" class="form-control" placeholder="Enter ID of the movie you want to modify" name="film_id">
+  </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" placeholder="Enter movie title" name="Title">
+  </div>
+  <div class="form-group">
+    <label for="title">Year</label>
+    <input type="date" class="form-control" placeholder="Enter movie year" name="Year">
+  </div>
+  <div class="form-group">
+    <label for="rated">Rated</label>
+    <select class="form-control" id="rated" name="Rated">
+      <option></option>
+      <option>G</option>
+      <option>PG</option>
+      <option>PG-13</option>
+      <option>R</option>
+      <option>NC-17</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="released">Realeased</label>
+    <input type="date" class="form-control" placeholder="Enter movie release date" name="Released">
+  </div>
+  <div class="form-group">
+    <label for="runtime">Runtime</label>
+    <input type="number" class="form-control" placeholder="Enter movie length in minutes" name="Runtime">
+  </div>
+  <div class="form-group">
+    <label for="genre">Genre</label>
+    <select class="form-control" id="genre" placeholder="Enter movie genre" name="Genre">
+      <option></option>
+      <option>Action</option>
+      <option>Adventure</option>
+      <option>Comedy</option>
+      <option>Crime</option>
+      <option>Drama</option>
+      <option>Fantasy</option>
+      <option>Historical</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="director">Director</label>
+    <input type="text" class="form-control" placeholder="Enter movie director" name="Director">
+  </div>
+  <div class="form-group">
+    <label for="writer">Writer</label>
+    <input type="text" class="form-control" placeholder="Enter movie writer" name="Writer">
+  </div>
+  <div class="form-group">
+    <label for="actors">Actors</label>
+    <input type="text" class="form-control" placeholder="Enter movie actors" name="Actors">
+  </div>
+
+
+
+
+  <div class="form-group">
+    <label for="plot">Plot</label>
+    <textarea type="text" class="form-control" id="description" placeholder="Enter movie description" name="Plot">
+    </textarea>
+  </div>
+  <div class="form-group">
+    <label for="language">Language</label>
+    <select class="form-control" id="language" placeholder="Enter movie language" name="Langauge">
+      <option></option>
+      <option>English</option>
+      <option>Spanish</option>
+      <option>Chinese</option>
+      <option>Romanian</option>
+      <option>Franch</option>
+      <option>Italian</option>
+      <option>Greak</option>
+      <option>Japanese</option>
+      <option>Portugese</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <select class="form-control" id="country" placeholder="Enter movie country" name="Country">
+     <option></option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>China</option>
+      <option>Romania</option>
+      <option>France</option>
+      <option>Italia</option>
+      <option>Greace</option>
+      <option>Japan</option>
+      <option>Portugal</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="awards">Awards</label>
+    <input type="text" class="form-control" placeholder="Enter movie awords" name="Awards">
+  </div>
+  <div class="form-group">
+    <label for="poster">Poster</label>
+
+    <input type="text" class="form-control" id="poster" placeholder="Enter poster link" name="Poster">
+
+  </div>
+  <div class="form-group">
+    <label for="metascore">Metascore</label>
+
+    <input type="number" class="form-control" id="metascore" placeholder="Enter movie metascore" name="Metascore">
+
+  </div>
+  <div class="form-group">
+    <label for="imdbrating">imdbRating</label>
+    <input type="number" class="form-control" id="imdrating" placeholder="Enter movie imdb rarting" name="imdbRating">
+
+  </div>
+  <div class="form-group">
+    <label for="imdbvotes">imdbVotes</label>
+    <input type="number" class="form-control" id="imdvotes" placeholder="Enter movie imdb votes" name="imdbVotes">
+
+
+  </div>
+  <div class="form-group">
+    <label for="imdbId">imdbID</label>
+    <input type="number" class="form-control" id="imdvotes" placeholder="Enter movie imdb id" name="imdbID">
+  </div>
+  <div class="form-group">
+    <label for="type">Type</label>
+    <select class="form-control" id="type" placeholder="Enter movie Type" name="Type">
+      <option></option>
+      <option>Documentary</option>
+      <option>Movie</option>
+      <option>Series</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="images">Images</label>
+    <input type="text" class="form-control" id="imdbvotes" placeholder="Enter movie images" name="Images">
+  </div>
+  <button type="submit" class="btn btn-default btn-success">
+    Create
+  </button>
+</form>
